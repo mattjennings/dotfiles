@@ -41,6 +41,7 @@ module.exports = {
     "@typescript-eslint/no-var-requires": "off",
       
     /* React */
+     "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
   },
