@@ -38,8 +38,9 @@ module.exports = {
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/member-delimiter-style": "off",
-
-    /* React hooks */
+    "@typescript-eslint/no-var-requires": "off",
+      
+    /* React */
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
   },
