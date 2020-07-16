@@ -11,23 +11,23 @@
     "eslint-plugin-react-hooks": "^4.0.0",
     "prettier": "^2.0.5"
  */
-module.exports = {
-  parser: "@typescript-eslint/parser",
-  extends: [
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
+    "prettier"
   ],
-  plugins: ["react-hooks"],
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: "module",
-    ecmaFeatures: {
-      jsx: true,
-    },
+  "plugins": ["react-hooks", "jsx-a11y"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
-  rules: {
+  "rules": {
     /* Base */
     "no-var": "error",
     "prefer-const": "warn",
@@ -40,21 +40,25 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/member-delimiter-style": "off",
     "@typescript-eslint/no-var-requires": "off",
-      
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+
     /* React */
-     "react/prop-types": "off",
+    "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
   },
-  settings: {
-    react: {
-      version: "detect",
-    },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   },
-  env: {
-    browser: true,
-    commonjs: true,
-    node: true,
-    es6: true,
-  },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  }
 }
