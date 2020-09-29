@@ -2,13 +2,14 @@
  * Typescript & React
  * 
  * packages:
-    "typescript": "^3.9.6",
-    "@typescript-eslint/eslint-plugin": "^3.6.1",
-    "@typescript-eslint/parser": "^3.6.1",
-    "eslint": "^7.4.0",
+    "typescript": "^4.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-react": "^7.20.3",
-    "eslint-plugin-react-hooks": "^4.0.8",
+    "eslint-plugin-react": "^7.21.2",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "prettier": "^2.0.5"
  */
 {
@@ -16,6 +17,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
@@ -32,6 +34,7 @@
     "no-var": "error",
     "prefer-const": "warn",
     "no-console": "off",
+    "no-fallthrough": "off",
 
     /* Typescript */
     "@typescript-eslint/explicit-function-return-type": "off",
@@ -43,11 +46,14 @@
     "@typescript-eslint/ban-ts-ignore": "off",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
 
     /* React */
     "react/prop-types": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error"
   },
   "settings": {
     "react": {
@@ -62,3 +68,4 @@
     "jest": true
   }
 }
+
